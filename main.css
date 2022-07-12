@@ -1,0 +1,75 @@
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #333;
+}
+
+.vanilla-playground {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-area {
+  background-color: #333;
+  min-width: 90%;
+  min-height: 50vh;
+  resize: none;
+  
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.toggle-switch {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 100rem;
+  background: lightgray;
+  cursor: pointer;
+  user-select: none;
+  transition: all .3s ease-in-out;
+  position: relative;
+  margin: 1rem;
+}
+
+.toggle-switch.on {
+  background: rgb(33, 133, 164);
+}
+
+  .toggle-switch .ball {
+    pointer-events: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100rem;
+    background: white;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.5rem;
+    transition:all 0.3s ease-in-out;
+  }
+    .toggle-switch .ball.on {
+      left: 3rem;
+    }
+
+.error-boundry {
+  color: rgb(211, 1, 1);
+  font-size: 1.5rem;
+}
+
+button {
+  width: 100%;
+}
+button.control-button h1 {
+  color: #333;
+  cursor: pointer;
+}
